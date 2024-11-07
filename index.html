@@ -4,233 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Portfolio</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
-        }
-
-        header {
-            height: 100vh;
-            background: linear-gradient(135deg, #1a1a1a 0%, #4a4a4a 100%);
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            padding: 1.5rem;
-            background: rgba(0, 0, 0, 0.8);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-        }
-
-        .nav-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        .nav-links a:hover {
-            color: #64ffda;
-        }
-
-        .header-content {
-            text-align: center;
-            z-index: 1;
-        }
-
-        .header-content h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            animation: fadeInUp 1s ease-out;
-        }
-
-        .header-content p {
-            font-size: 1.5rem;
-            opacity: 0.9;
-            margin-bottom: 2rem;
-            animation: fadeInUp 1s ease-out 0.2s backwards;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background: #64ffda;
-            color: #1a1a1a;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: transform 0.3s;
-            animation: fadeInUp 1s ease-out 0.4s backwards;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-        }
-
-        section {
-            padding: 5rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            text-align: center;
-            color: #1a1a1a;
-        }
-
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
-        }
-
-        .about-text {
-            text-align: left;
-        }
-
-        .skills-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .skill-tag {
-            background: #1a1a1a;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .project-card {
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .project-image {
-            width: 100%;
-            height: 200px;
-            background: #ddd;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .project-content {
-            padding: 1.5rem;
-        }
-
-        .project-title {
-            font-size: 1.25rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .project-tags {
-            display: flex;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .project-tag {
-            background: #f0f0f0;
-            padding: 0.25rem 0.75rem;
-            border-radius: 15px;
-            font-size: 0.8rem;
-        }
-
-        footer {
-            background: #1a1a1a;
-            color: white;
-            padding: 3rem 2rem;
-            text-align: center;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .social-links a {
-            color: white;
-            font-size: 1.5rem;
-            transition: color 0.3s;
-        }
-
-        .social-links a:hover {
-            color: #64ffda;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-
-            .nav-links {
-                gap: 1rem;
-            }
-
-            .header-content h1 {
-                font-size: 2.5rem;
-            }
-        }
-    </style>
+    <title>Your Name - Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -254,9 +30,8 @@
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>I'm a passionate developer with a keen interest in building innovative web solutions. With experience
-                    in both frontend and backend development, I love turning complex problems into simple, beautiful,
-                    and intuitive solutions.</p>
+                <p>I'm a passionate developer focused on creating elegant solutions to complex problems. I specialize in
+                    full-stack development and always strive to write clean, efficient code.</p>
                 <div class="skills-list">
                     <span class="skill-tag">JavaScript</span>
                     <span class="skill-tag">React</span>
@@ -265,9 +40,6 @@
                     <span class="skill-tag">SQL</span>
                 </div>
             </div>
-            <div class="about-image">
-                <img src="/api/placeholder/400/400" alt="Profile Image" style="width: 100%; border-radius: 10px;">
-            </div>
         </div>
     </section>
 
@@ -275,44 +47,40 @@
         <h2 class="section-title">Featured Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <div class="project-image">
-                    <img src="/api/placeholder/300/200" alt="Project 1">
-                </div>
                 <div class="project-content">
                     <h3 class="project-title">Project Name 1</h3>
                     <div class="project-tags">
                         <span class="project-tag">React</span>
                         <span class="project-tag">Node.js</span>
                     </div>
-                    <p>A brief description of your project and what technologies you used to build it.</p>
+                    <p>Description of your first project. Explain what it does and what technologies you used.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/yourusername/project1" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div class="project-card">
-                <div class="project-image">
-                    <img src="/api/placeholder/300/200" alt="Project 2">
-                </div>
                 <div class="project-content">
                     <h3 class="project-title">Project Name 2</h3>
                     <div class="project-tags">
                         <span class="project-tag">Python</span>
                         <span class="project-tag">Flask</span>
                     </div>
-                    <p>A brief description of your project and what technologies you used to build it.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="/api/placeholder/300/200" alt="Project 3">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Project Name 3</h3>
-                    <div class="project-tags">
-                        <span class="project-tag">JavaScript</span>
-                        <span class="project-tag">API</span>
+                    <p>Description of your second project. Highlight the main features and your role.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/yourusername/project2" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
                     </div>
-                    <p>A brief description of your project and what technologies you used to build it.</p>
                 </div>
             </div>
         </div>
@@ -321,12 +89,11 @@
     <footer id="contact">
         <h2>Get In Touch</h2>
         <div class="social-links">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/yourusername"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourusername"><i class="fab fa-linkedin"></i></a>
             <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
         </div>
-        <p>© 2024 [Your Name]. All rights reserved.</p>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
     </footer>
 </body>
 
